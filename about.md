@@ -12,7 +12,7 @@ At the start, I am trying to ask one person every week, but not sure about the e
 RSS: [https://consumesthis.com/feed.xml](https://consumesthis.com/feed.xml)
 
 ## Suggestions?
-Of people to ask from and in general, are hugely appreciated! Drop me an email at hello(at)chaitanya.page with the subject "Consumes This".
+Of people to ask from and in general, are hugely appreciated! Drop me an email at hello(at)[chaitanya.page](https://chaitanya.page/) with the subject "Consumes This".
 
 ## Support?
 This is still an experimental project and should not receive monetary support till it reaches somewhere. Please share it with people instead!
