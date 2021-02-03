@@ -1,0 +1,11 @@
+title: Consumes This
+email: hello@chaitanya.page
+description: Going around and asking people what kind of content do they consume.
+baseurl: ""
+url: "https://consumesthis.com"
+permalink: /:title
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

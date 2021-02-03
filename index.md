@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Consumes This
 ---
 # Consumes This
