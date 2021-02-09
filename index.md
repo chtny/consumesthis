@@ -4,6 +4,6 @@ title: Consumes This
 ---
 <ul>
 {% for post in site.posts %}
-	<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span>{{ post.date | date: "%Y-%m-%d" }}</span></li>
+	<li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
