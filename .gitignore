@@ -1,2 +1,4 @@
-
-.DS_Store
+.obsidian/config
+.obsidian/workspace
+**/.DS_Store
+/_drafts/
