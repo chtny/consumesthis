@@ -16,7 +16,7 @@ Consumes This is directly inspired by [Uses This](https://usesthis.com/) by Dani
 ### Schedule?
 At the start, I am trying to ask one person every week, but not sure about the exact day it gets published.
 
-## Feeds?
+### Feeds?
 RSS: [https://consumesthis.com/feed.xml](https://consumesthis.com/feed.xml)
 
 ### Suggestions?
