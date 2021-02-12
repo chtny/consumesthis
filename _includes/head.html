@@ -6,377 +6,161 @@
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥</text></svg>">
 	{% seo %}
 	<style>
-		:root {
-			--b-font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-			--b-font-mono: Consolas, Monaco, monospace;
-
-			--b-txt: #2e3440;
-			--b-bg-1: #fff;
-			--b-bg-2: #eceff4;
-			--b-line: #eceff4;
-			--b-link: #bf616a;
-			--b-btn-bg: #242933;
-			--b-btn-txt: #fff;
+		html {
+		  font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
+		  font-size: 16px;
+		  line-height: 1.5rem;
 		}
 
-		*,
-		::before,
-		::after {
-			box-sizing: border-box;
-		}
-		html:focus-within {
-			scroll-behavior: smooth;
-		}
-		body {
-			max-width: 70ch;
-			padding: 1rem;
-			margin: auto;
-			background: var(--b-bg-1);
-			font-family: var(--b-font-main);
-			text-rendering: optimizeSpeed;
-			line-height: 1.5;
-			color: var(--b-txt);
-			-moz-tab-size: 4;
-			tab-size: 4;
-			word-break: break-word;
-			-webkit-tap-highlight-color: transparent; /* Remove the grey highlight on links in iOS */
-			-webkit-text-size-adjust: 100%;  /* Prevent adjustments of font size after orientation changes in iOS. */
-		}
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6,
-		p,
-		ul,
-		ol,
-		dl,
-		dd,
-		details,
-		blockquote,
-		pre,
-		figure,
-		table,
-		address,
-		hr,
-		fieldset,
-		progress,
-		iframe,
-		audio,
-		video {
-			margin: 0 0 1.5rem;
-		}
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			line-height: 1.25;
-		}
-		h1 {
-			font-size: 2rem;
-		}
-		h2 {
-			font-size: 1.5rem;
-		}
-		h3 {
-			font-size: 1.25rem;
-		}
-		h4 {
-			font-size: 1rem;
-		}
-		h5 {
-			font-size: .875rem;
-		}
-		h6 {
-			font-size: .75rem;
-		}
-		a {
-			color: var(--b-link);
-			text-decoration: none;
-		}
-		a:hover {
-			text-decoration: underline;
-		}
-		img,
-		video,
-		svg {
-			max-width: 100%;
-			height: auto;
-		}
-		embed,
-		iframe,
-		object {
-			max-width: 100%;
-		}
-		iframe {
-			border-style: none;
+		code, pre, samp, kbd {
+		  font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+		  font-size: 0.833rem;
 		}
 
-		/* Add the correct text decoration in Safari. */
-		abbr[title] {
-			text-decoration: underline;
-			text-decoration: underline dotted;
-		}
-		blockquote {
-			margin-left: 0;
-			padding: .5rem 0 .5rem 1.5rem;
-			border-left: .25rem solid var(--b-txt);
-		}
-		small {
-			font-size: .875rem;
-		}
+		kbd { font-weight: bold; }
+		h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
 
-		/* Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
-		sub,
-		sup {
-			font-size: .75em;
-			line-height: 0;
-			position: relative;
-			vertical-align: baseline;
+		h1 { font-size: 2.488em; }
+		h2 { font-size: 2.074em; }
+		h3 { font-size: 1.728em; }
+		h4 { font-size: 1.44em; }
+		h5 { font-size: 1.2em; }
+		h6 { font-size: 1em; }
+		small { font-size: 0.833em; }
+
+		h1, h2, h3 { line-height: 3rem; }
+
+		p, ul, ol, dl, table, blockquote, pre, h1, h2, h3, h4, h5, h6 {
+		  margin: 1.5rem 0 0;
 		}
-		sub {
-			bottom: -.25em;
-		}
-		sup {
-			top: -.5em;
-		}
+		ul ul, ol ol, ul ol, ol ul { margin: 0; }
 
 		hr {
-			height: 0; /* Add the correct box sizing in Firefox. */
-			overflow: visible; /* Show the overflow in Edge and IE. */
-
-			border: 0;
-			border-bottom: 1px solid var(--b-line);
+		  margin: 0;
+		  border: none;
+		  padding: 1.5rem 0 0;
 		}
 
-		/* Code */
-		pre,
-		code,
-		kbd,
-		samp,
-		tt,
-		var {
-			background: var(--b-bg-2);
-			border-radius: .25rem;
-			padding: .125rem .25rem;
-			font-family: var(--b-font-mono);
-			font-size: .875rem;
+		table {
+		  line-height: calc(1.5rem - 1px);
+		  margin-bottom: -1px;
 		}
 		pre {
-			padding: 1.5rem;
-			border-radius: 0;
-			overflow: auto;
-			white-space: pre-wrap;
+		  margin-top: calc(1.5rem - 1px);
+		  margin-bottom: -1px;
+		}
+
+		body { color: #222; }
+		code, pre, samp, kbd { color: #111; }
+		a, header nav a:visited, a code { color: #00e; }
+		a:visited, a:visited code { color: #60b; }
+		mark { color: inherit; }
+
+		code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
+		mark { background-color: #fe0; }
+
+		main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
+		pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
+		th, td { border: solid #dbdbdb; }
+
+		body { margin: 1.5rem 1ch; }
+
+		body > header { text-align: center; }
+
+		main, body > footer {
+		  display: block;
+		  max-width: 78ch;
+		  margin: auto;
+		}
+
+		main figure, main aside {
+		  float: right;
+		  margin: 1.5rem 0 0 1ch;
+		}
+
+		main aside {
+		  max-width: 26ch;
+		  border-width: 0 0 0 0.5ch;
+		  padding: 0 0 0 0.5ch;
+		}
+
+		blockquote {
+		  margin-right: 3ch;
+		  margin-left: 1.5ch;
+		  border-width: 0 0 0 0.5ch;
+		  padding: 0 0 0 1ch;
+		}
+
+		pre {
+		  border-width: 1px;
+		  border-radius: 2px;
+		  padding: 0 0.5ch;
+		  overflow-x: auto;
 		}
 		pre code {
-			padding: 0;
+		  border: none;
+		  padding: 0;
+		  background-color: transparent;
+		  white-space: inherit;
 		}
 
-		/* Details */
-		details {
-			display: block;
-			padding: .5rem 1rem;
-			background: var(--b-bg-2);
-			border: 1px solid var(--b-line);
-			border-radius: .25rem;
-		}
-		summary {
-			display: list-item;
-			cursor: pointer;
-			font-weight: bold;
-		}
+		img { max-width: 100%; }
 
-		/* Table */
-		table {
-			border-collapse: collapse;
-			width: 100%;
-			text-indent: 0; /* Remove text indentation from table contents in Chrome, Edge, and Safari. */
-		}
-		table caption {
-			margin-bottom: .5rem;
-		}
-		tr {
-			border-bottom: 1px solid var(--b-line);	
-		}
-		td,
-		th {
-			padding: .5rem 0;
-		}
-		th {
-			text-align: left;
-		}
+		ul, ol, dd { padding: 0 0 0 3ch; }
+		dd { margin: 0; }
 
-		/* Lists */
+		ul > li { list-style-type: disc; }
+		li ul > li { list-style-type: circle; }
+		li li ul > li { list-style-type: square; }
+
+		ol > li { list-style-type: decimal; }
+		li ol > li { list-style-type: lower-roman; }
+		li li ol > li { list-style-type: lower-alpha; }
+
 		nav ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
+		  padding: 0;
+		  list-style-type: none;
 		}
-		ul,
-		ol,
-		dd {
-			padding-left: 2rem;
+		nav ul li {
+		  display: inline;
+		  padding-left: 1ch;
+		  white-space: nowrap;
 		}
-		li > ul,
-		li > ol {
-			margin-bottom: 0;
+		nav ul li:first-child { padding-left: 0; }
+
+		table {
+		  width: 100%;
+		  border-collapse: collapse;
+		  overflow-x: auto;
 		}
 
-		/* Forms */
-		fieldset {
-			padding: 5rem .75rem;
-			border: 1px solid var(--b-line);
-			border-radius: .25rem;
-		}
-		legend {
-			padding: 0 .25rem;
-		}
-		button,
-		input,
-		select,
-		textarea {
-			margin: 0;
-			padding: .5rem .75rem;
-			max-width: 100%;
-			background: var(--b-bg-2);
-			border: 0;
-			border-radius: .25rem;
-			font: inherit;
-			line-height: 1.125;
-			color: var(--b-txt);
-		}
-		select,
-		input:not([size]):not([type="button" i]):not([type="submit" i]):not([type="reset" i]):not([type="checkbox" i]):not([type="radio" i]),
-		textarea:not([cols]) {
-			width: 100%;
-		}
-		select:not([multiple]):not([size]) {
-			padding-right: 1.5rem;
-			background: var(--b-bg-2) url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#2e3440"><path d="M5 6l5 5 5-5 2 1-7 7-7-7 2-1z"/></svg>') no-repeat right .5rem center;
-			-moz-appearance: none; 
-			-webkit-appearance: none; 
-			appearance: none;
-		}
-		textarea {
-			resize: vertical;
-		}
-		textarea:not([rows]) {
-			height: 8rem;
+		th, td {
+		  border-width: 1px;
+		  padding: 0 0.5ch;
 		}
 
-		button,
-		[type="button" i],
-		[type="submit" i],
-		[type="reset" i] {
-			-webkit-appearance: button;
-			display: inline-block;
-			text-align: center;
-			white-space: nowrap;
-			background: var(--b-btn-bg);
-			color: var(--b-btn-txt);
-			border: 0;
-			cursor: pointer;
-			transition: opacity .25s;
-		}
-		button:hover,
-		[type="button" i]:hover,
-		[type="submit" i]:hover,
-		[type="reset" i]:hover {
-			opacity: .75;
-		}
-		button[disabled],
-		[type="button" i][disabled],
-		[type="submit" i][disabled],
-		[type="reset" i][disabled] {
-			opacity: .5;
+		a { text-decoration: none; }
+
+		sup, sub {
+		  font-size: 0.75em;
+		  line-height: 1em;
 		}
 
-		/* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
-		progress {
-			vertical-align: baseline;
+		ins {
+		  border-width: 1px;
+		  padding: 1px;
+		  text-decoration: none;
 		}
 
-		/**
-		 * 1. Correct the odd appearance in Chrome and Safari.
-		 * 2. Correct the outline style in Safari.
-		 */
-		[type="search" i] {
-			-webkit-appearance: textfield; /* 1 */
-			outline-offset: -2px; /* 2 */
+		mark {
+		  padding: 1px;
 		}
 
-		/* Correct the cursor style of increment and decrement buttons in Chrome. */
-		::-webkit-inner-spin-button,
-		::-webkit-outer-spin-button {
-			height: auto;
-		}
-
-		/* Correct the text style of placeholders in Chrome, Edge, and Safari. */
-		::-webkit-input-placeholder {
-			color: inherit;
-			opacity: .5;
-		}
-
-		/* Remove the inner padding in Chrome and Safari on macOS. */
-		::-webkit-search-decoration {
-			-webkit-appearance: none;
-		}
-
-		/**
-		 * 1. Correct the inability to style clickable types in iOS and Safari.
-		 * 2. Change font properties to `inherit` in Safari.
-		 */
-		::-webkit-file-upload-button {
-			-webkit-appearance: button; /* 1 */
-			font: inherit; /* 2 */
-		}
-
-		/* Remove the inner border and padding of focus outlines in Firefox. */
-		::-moz-focus-inner {
-			border-style: none;
-			padding: 0;
-		}
-
-		/* Restore the focus outline styles unset by the previous rule in Firefox. */
-		:-moz-focusring {
-			outline: 1px dotted ButtonText;
-		}
-
-		/* Remove the additional :invalid styles in Firefox. */
-		:-moz-ui-invalid {
-			box-shadow: none;
-		}
-
-		/* Accessibility */
-		[aria-busy="true" i] {
-			cursor: progress;
-		}
-		[aria-controls] {
-			cursor: pointer;
-		}
-		[aria-disabled="true" i],
-		[disabled] {
-			cursor: not-allowed;
-		}
-
-		@media (prefers-reduced-motion: reduce) {
-			html:focus-within {
-				scroll-behavior: auto;
-			}
-			*,
-			::before,
-			::after {
-				animation-delay: -1ms !important;
-				animation-duration: 1ms !important;
-				animation-iteration-count: 1 !important;
-				background-attachment: initial !important;
-				scroll-behavior: auto !important;
-				transition-delay: 0 !important;
-				transition-duration: 0 !important;
-			}
+		code, samp {
+		  border-width: 1px;
+		  border-radius: 2px;
+		  padding: 0.1em 0.2em;
+		  white-space: nowrap;
 		}
 	</style>
 </head>
