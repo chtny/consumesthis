@@ -1,7 +1,7 @@
 ---
 layout: blog
-title:  "Maique Madeira"
-date:   2021-02-11 22:30:00 +0530
+title: "Maique Madeira"
+date: 2021-02-11 22:30:00 +0530
 ---
 ### Who are you?
 A husband, father, and photographer from Lisbon, Portugal.
