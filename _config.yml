@@ -10,4 +10,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 feed:
-  path: rss
+  path: /rss
