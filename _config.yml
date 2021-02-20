@@ -9,3 +9,5 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+feed:
+  path: rss
