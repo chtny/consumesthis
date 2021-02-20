@@ -1,7 +1,7 @@
 ---
 layout: blog
-title:  "Varun Soni"
-date:   2021-02-21 00:20:00 +0530
+title: "Varun Soni"
+date: 2021-02-21 00:20:00 +0530
 ---
 ### Who are you?
 I'm a lover of technology and enjoy exploring its implications on our society.
