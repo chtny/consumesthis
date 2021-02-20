@@ -1,7 +1,7 @@
 ---
 layout: blog
-title:  "Pranav Ashwin Ramesh"
-date:   2021-02-14 22:45:00 +0530
+title: "Pranav Ashwin Ramesh"
+date: 2021-02-14 22:45:00 +0530
 ---
 ### Who are you?
 I'm Pranav from Bangalore, India. I'm in design school, and I'm experimenting with app design. I love smoking weed, experimenting with other drugs, swimming and playing basketball.
