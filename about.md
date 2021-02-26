@@ -11,13 +11,13 @@ Consumes This is directly inspired by [Uses This](https://usesthis.com/) by Dani
 - What are the sources for your consumption?
 - What type of content would you experiment with soon?
 
-[An example is available here.](https://consumesthis.com/example.html)
+[An example is available here.](https://consumesthis.com/example)
 
 ### Schedule?
 At the start, I am trying to ask one person every week, but not sure about the exact day it gets published.
 
 ### Feeds?
-RSS: [https://consumesthis.com/feed.xml](https://consumesthis.com/feed.xml)
+RSS: [https://consumesthis.com/rss](https://consumesthis.com/rss)
 
 ### Suggestions?
 Of people to ask from and in general, are hugely appreciated! Drop me an email at hello(at)[chaitanya.page](https://chaitanya.page/) with the subject "Consumes This".
